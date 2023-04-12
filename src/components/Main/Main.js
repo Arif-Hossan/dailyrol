@@ -3,6 +3,7 @@ import './Main.css';
 import Header from '../Header/Header';
 import Activity from '../Activity/Activity';
 import Profile from '../Profile/Profile';
+import { addToDb } from '../../utilities/fakeDb';
 
 const Main = () => {
     const [activities,setActivities]=useState([]);
@@ -13,6 +14,7 @@ const Main = () => {
         const newTimes = [...times,activityTime];
         // console.log(newTimes);
         setTimes(newTimes);
+        addToDb(selectedActivity.id);
 
     }
     useEffect(()=>{
