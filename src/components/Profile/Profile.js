@@ -4,7 +4,7 @@ import './Profile.css';
 import Break from '../Break/Break';
 import ExcerciseDetails from '../ExcerciseDetails/ExcerciseDetails';
 
-const Profile = () => {
+const Profile = ({times}) => {
     return (
         <div className='profile'>
             <div className='profile-info'>
@@ -24,7 +24,7 @@ const Profile = () => {
             <h4>Add a Break</h4>
             <Break></Break>
             <h4>Excercise Details</h4>
-            <ExcerciseDetails></ExcerciseDetails>
+            <ExcerciseDetails times={times}></ExcerciseDetails>
         </div>
 
     );
