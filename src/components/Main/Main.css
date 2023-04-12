@@ -1,0 +1,26 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.activity-container{
+    padding: 10px 60px;
+    background: #f2f4fa;
+}
+.profile-container{
+    height: 100%;
+    color: #fff;
+    background: #2a8319;
+}
+.activity{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+@media screen and (max-width : 500px) {
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+    .activity{
+        grid-template-columns: 1fr;
+    }
+}

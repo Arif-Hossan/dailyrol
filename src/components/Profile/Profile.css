@@ -1,0 +1,24 @@
+.profile{
+    padding: 1rem;
+}
+.profile-info{
+    display: flex;
+}
+.profile-info img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.profile-intro{
+    margin-left: 1rem;
+}
+.profile-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    background: #f2f4fa;
+    color: gray;
+    padding: 5px 20px;
+    margin-top: 0.75rem;
+    border-radius: 10px;
+}
