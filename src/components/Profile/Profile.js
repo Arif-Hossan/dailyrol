@@ -23,7 +23,7 @@ const Profile = ({times}) => {
 
             <h4>Add a Break</h4>
             <Break></Break>
-            <h4>Excercise Details</h4>
+            <h4>Activity Details</h4>
             <ExcerciseDetails times={times}></ExcerciseDetails>
         </div>
 

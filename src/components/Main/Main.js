@@ -9,17 +9,11 @@ const Main = () => {
     const [times,setTimes] =useState([]);
 
     const handleTime = (selectedActivity) =>{
-
-        // const exist = activities.find(activity => activity.id===selectedActivity.id)
-        // const initialTime = 0;
-        //take the first 2 digit and convert it to number from string
-        const activityTime = + selectedActivity.time.slice(0,2);
+        const activityTime = selectedActivity.time;
         const newTimes = [...times,activityTime];
-        // const totalTime = initialTime + activityTime;
-        // console.log(totalTime);
-
+        // console.log(newTimes);
         setTimes(newTimes);
-        // setTimes(totalTime);
+
     }
     useEffect(()=>{
         fetch('activity.json')
