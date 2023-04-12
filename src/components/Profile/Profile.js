@@ -1,6 +1,8 @@
 import React from 'react';
 import profileImg from '../../profile.jpg';
 import './Profile.css';
+import Break from '../Break/Break';
+import ExcerciseDetails from '../ExcerciseDetails/ExcerciseDetails';
 
 const Profile = () => {
     return (
@@ -14,10 +16,15 @@ const Profile = () => {
               </div>
             </div>
             <div className='profile-details'>
-             <h2>75 Kg<p><small>Weight</small></p></h2>
-             <h2>5.5 ft<p><small>Height</small></p></h2>
-             <h2>26<p><small>Years</small></p></h2>
+             <h4>75 Kg<p><small>Weight</small></p></h4>
+             <h4>5.5 ft<p><small>Height</small></p></h4>
+             <h4>26<p><small>Years</small></p></h4>
             </div>
+
+            <h4>Add a Break</h4>
+            <Break></Break>
+            <h4>Excercise Details</h4>
+            <ExcerciseDetails></ExcerciseDetails>
         </div>
 
     );
